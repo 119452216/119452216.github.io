@@ -1,0 +1,17 @@
+.table-container1 {
+	width:30%;
+	margin: auto;
+	font-family: Calibri;
+}
+
+table td{
+	height: 40px;
+	border: solid thin black;
+}
+
+
+body {
+	background-color: lightblue;
+	padding: 20px;
+	text-align: center
+}

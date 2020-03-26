@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel</title>
+	<link rel="stylesheet" type="text/css" href="travel.css">
+
+
+<style>
+	ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  float: left;
+}
+
+li  a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover :not(.active){
+  background-color: #111;
+}
+
+.active  {
+  background-color: #4CAF50;
+}
+</style>
+<style type="text/css">
+
+#container {
+  overflow: hidden;
+  width: 98vw;
+  height: 100vh;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+
+}
+
+#imgs {
+  display: block;
+  padding: 0;
+  width: 200%;
+}
+
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+body{
+	background-image: url('alp.jpg');
+	  background-color: #cccccc; /* Used if the image is unavailable */
+	  background-position: center; /* Center the image */
+	  background-repeat: no-repeat; /* Do not repeat the image */
+	  background-size: cover; /* Resize the background image to cover the entire container */
+}
+</style>
+
+</head>
+
+
+
+<body>
+
+
+<nav>
+	<ul>
+		<li><a  href="firstpage.html">Home</a></li>
+		<li><a href="CurriculumVitae.html"> CV</a></li>
+		<li><a class="active" href="Interests.html">Interests</a></li>
+		<li><a href="Consulting.html"> Consulting</a></li>
+		<li><a href="Cost.html"> Cost</a></li>
+	</ul>
+
+	<div class="main-text">
+	<H3 align="center" class ="Travel">Travel</H3>
+  <p class="Text"> I have travelled all over the world in my life, I've been to Abu Dhabi, Dubai, 7 different states accoss America, Canada, Kolkata in India with the HOPE charity,  Spain, France, Poland, England and Wales. In the future I plan on traveling to Ios which is an Island just off Greece and Cancun in Mexico. I also hope to tavel more of Eastern Euorpe in the coming years and go to countries such as Croatia and Ukraine to see they culturel differances of these countries in comparison to Ireland.</p>
+
+<!-- images for my image scroller -->
+ <span class="title" style="color: #000;">Travel</span>
+  <ul id="imgs">
+    <li><img src="tahoe.jpg" alt="" title="Lake Tahoe, Californa"/></li>
+    <li><img src="Dhabi.jpg" alt="" title="Downtown Abu Dhabi"/></li>
+    <li><img src="dubai.jpg" alt="" title="burj khalifa"/></li>
+    <li><img src="kolkata.jpg" alt="" title="Street going down Kolkata" /></li>
+    <li><img src="Nerja.jpg" alt="" title="The Balcon de Europa" /></li>
+    <li><img src="Paris.jpg" alt="" title="Effiel tower" /></li>
+    <li><img src="man.jpg" alt="" title="Manchester" /></li>
+
+
+  </ul>
+
+<!-- java script for the image scroller -->
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+     
+    }
+  });
+
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body>
+</html>

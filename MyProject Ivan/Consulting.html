@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consultation</title>
+	<style>
+	ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  float: left;
+}
+
+li  a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover :not(.active){
+  background-color: #111;
+}
+
+.active  {
+  background-color: #4CAF50;
+}
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  /*height: 300px;  Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+
+</head>
+
+
+<body>
+<div>
+<ul>
+	<li><a href="firstpage.html">Home</a></li>
+	<li><a href="CurriculumVitae.html"> CV</a></li>
+	<li><a href="Interests.html">Interests</a></li>
+	<li><a class="active" href="Consulting.html"> Consulting</a></li>
+	<li><a href="Cost.html"> Cost</a></li>
+</ul>
+</div>
+
+<h1 align="center"> Finn Consultancy Firm </h1>
+<hr width="100%" size="6"/>
+
+<!-- the columns on what we consult on -->
+<div class="row">
+   <div class="column"  style="background-color:#ccc;">
+    <h2>Hyperautomation</h2>
+
+   <a href="https://blog.datarobot.com/what-is-hyperautomation" ><img align="center" src="Hyper.jpg" height="200" width="200" title= "Learn more about Hyperautomation"> </a>
+    <p>Hyperautomation brings together several components of process automation, integrating tools and technologies that amplify the ability to automate work.  </br>
+
+It starts with robotic process automation (RPA) at its core, and expands automation capability with artificial intelligence (AI), process mining, analytics, and other advanced tools.  </br> 
+
+The idea is to automate more and more knowledge work, and engage everyone in an organization to be part of the transformation. </br> 
+  </div>
+
+
+  <div class="column" style="background-color:#ccc;"> 
+    <h2>Multiexperience</h2>
+    <a href="https://www.gartner.com/en/information-technology/glossary/multiexperience-development-platforms-mxdp" ><img align="center" src="multi.jpg" height="200" width="200" title="Learn more about Multiexperience"> </a>
+    <p>Multiexperience is a concept pioneered by Gartner late in 2019. The concept is being championed as one of the biggest developments for 2020. In fact, Gartner states that “more than 25% of the mobile apps, progressive web apps and conversational apps at large enterprises will be built and/or run through a multiexperience development platform” by 2023. </br>
+
+In short, multiexperience is about adapting to the increasing market of different devices and their respective experiences. Applications now need to run on different platforms and adapt easily, all while providing a consistent experience from a business perspective. </br>
+
+Why is this relevant? For one, it’s because a few companies are already doing it and, for another, it’s because the average individual currently owns 3.2 different devices. In other words, it’s becoming the increasingly expected norm. </br>
+
+But, other than a few key examples, little more is known than this. This is where we’re here to help.</p>
+  </div>
+
+
+  <div class="column" style="background-color:#ccc;"> 
+    <h2> Distributed Cloud </h2>
+   <a href="https://searchitoperations.techtarget.com/definition/distributed-cloud" > <img align="center" src="cloud.jpg" height="200" width="200" title="Learn more about Distributed Cloud"> </a>
+    <p>Distributed cloud is the application of cloud computing technologies to interconnect data and applications served from multiple geographic locations. </br>
+
+Distributed, in an information technology (IT) context, means that something is shared among multiple systems which may also be in different locations. Distributed cloud speeds communications for global services and enables more responsive communications for specific regions. </br>
+
+Cloud providers use the distributed model to enable lower latency and provide better performance for cloud services. Beyond the cloud provider context, two other examples of distributed cloud are public resource computing and the volunteer cloud. </br>
+</p> 
+  </div>
+
+
+</body>
+
+
+
+
+</html>

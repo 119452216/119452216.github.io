@@ -1,0 +1,21 @@
+body{
+	background-image: url(amazon.jpg);
+	background-size: cover;
+}
+
+.right{
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	width: 200px
+	padding: 0px;
+	background-size: cover;
+}
+.left{
+		position: absolute;
+	left: 10px;
+	top: 25px;
+	width: 200px
+	padding: 0px;
+	background-size: cover;
+}

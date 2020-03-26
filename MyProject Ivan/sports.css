@@ -1,0 +1,20 @@
+
+body{
+	font-size:20px;
+	color: white;
+	overflow-x: hidden;
+}
+.main-text{
+	padding:2%;
+  overflow: hidden;
+  margin: auto auto;
+  cursor: pointer;
+  margin-top:80px;
+  color: #000;
+  background: #CCC;
+
+ 	border: solid thin black;
+ 	border-radius: 25px;
+
+}
+
